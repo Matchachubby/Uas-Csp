@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalung</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 3rem; /* Jarak dari navbar */
+            margin-bottom: 2rem;
+        }
+
+        .price-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #977195; /* Latar belakang semi-transparan */
+            color: rgb(255, 255, 255); /* Warna teks */
+            padding: 10px 20px; /* Padding */
+            border-radius: 5px; /* Sudut membulat */
+            display: none; /* Sembunyikan secara default */
+            text-align: center; /* Rata tengah */
+        }
+
+        .card:hover .price-overlay {
+            display: block; /* Tampilkan saat hover */
+        }
+
+        .card {
+            overflow: hidden; /* Sembunyikan bagian yang melampaui batas */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #977195;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">NonaManis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#slider">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Koleksi</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gelang.html">Gelang</a></li>
+                                <li><a class="dropdown-item" href="kalung.html">Kalung</a></li>
+                                <li><a class="dropdown-item" href="gantungan.html">Gantungan Kunci</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="index.html#produk">Best Seller</a></li>
+                                <li><a class="dropdown-item" href="promo.html">Promo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pesan.html">Pesan Sekarang</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="color: #977195;">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="mt-5">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center" style="height: 200px;">
+                <h1 class="text-center">Kalung</h1> <!-- Judul di tengah -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 position-relative">
+                        <img src="img/kalung.png" class="card-img-top" alt="Kalung 1">
+                        <div class="price-overlay">Rp 100.000</div> <!-- Harga -->
+                        <div class="card-body">
+                            <h5 class="card-title">Kalung 1</h5>
+                            <p class="card-text">Tampil cantik dengan kalung istimewa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 position-relative">
+                        <img src="img/kalung1.png" class="card-img-top" alt="Kalung 2">
+                        <div class="price-overlay">Rp 150.000</div> <!-- Harga -->
+                        <div class="card-body">
+                            <h5 class="card-title">Kalung 2</h5>
+                            <p class="card-text">Kalung dengan gaya hati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 position-relative">
+                        <img src="img/kalung2.png" class="card-img-top" alt="Kalung 3">
+                        <div class="price-overlay">Rp 200.000</div> <!-- Harga -->
+                        <div class="card-body">
+                            <h5 class="card-title">Kalung 3</h5>
+                            <p class="card-text">Cocok untuk orang tersayang.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 position-relative">
+                        <img src="img/kalung3.png" class="card-img-top" alt="Kalung 4">
+                        <div class="price-overlay">Rp 250.000</div> <!-- Harga -->
+                        <div class="card-body">
+                            <h5 class="card-title">Kalung 4</h5>
+                            <p class="card-text">Kalung merah yang elegan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 position-relative">
+                        <img src="img/kalung4.jpg" class="card-img-top" alt="Kalung 5">
+                        <div class="price-overlay">Rp 300.000</div> <!-- Harga -->
+                        <div class="card-body">
+                            <h5 class="card-title">Kalung 5</h5>
+                            <p class="card-text">Simpel dan anggun.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 position-relative">
+                        <img src="img/kalung5.jpg" class="card-img-top" alt="Kalung 6">
+                        <div class="price-overlay">Rp 350.000</div> <!-- Harga -->
+                        <div class="card-body">
+                            <h5 class="card-title">Kalung 6</h5>
+                            <p class="card-text">Kalung couple dengan kakak,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <nav class="navbar text-white justify-content-center" style="background-color: #977195;">
+        copyright 2025 Nona Manis. All rights reserved.
+    </nav>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
